@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "a605aadc-6f53-4b2d-8163-560a330a202e",
+		"name": "Plan-pricing-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20024251"
+	},
+	"item": [
+		{
+			"name": "plan-pricing/read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/plan-pricing/read",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"plan-pricing",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan-pricing/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"planId\": 9,\r\n  \"price\": 100.2,\r\n  \"currencyCode\": \"MXN\",\r\n  \"countryCode\": \"MX\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/plan-pricing/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"plan-pricing",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan-pricing/calculate-prorated-price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/plan-pricing/calculate-prorated-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"plan-pricing",
+						"calculate-prorated-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan-pricing/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 5,\r\n  \"price\": 28.30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/plan-pricing/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"plan-pricing",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "plan-pricing/bulk-update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 2,\r\n    \"price\": 63.20\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/plan-pricing/bulk-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"plan-pricing",
+						"bulk-update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

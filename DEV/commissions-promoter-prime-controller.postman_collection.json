@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "d49ca79c-b8f7-48d7-8092-545b6cd59923",
+		"name": "commissions-promoter-prime-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20024251"
+	},
+	"item": [
+		{
+			"name": "commissions-promoter-prime/subscription-type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/commissions-promoter-prime/subscription-type",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"commissions-promoter-prime",
+						"subscription-type"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commissions-promoter-prime/find-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/commissions-promoter-prime/find-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"commissions-promoter-prime",
+						"find-all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

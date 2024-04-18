@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "9a6e6520-83eb-4c95-bf51-8bea33f1c68d",
+		"name": "Promotions-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20024251"
+	},
+	"item": [
+		{
+			"name": "promotions/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"idNaturePro\": 2,\r\n  \"name\": \"Descuento 60%\",\r\n  \"idTypePro\": 1,\r\n  \"value\": \"3x1\",\r\n  \"flgState\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/promotions/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"promotions",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "promotions/changestate/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"state\": false,\r\n  \"data\": {},\r\n  \"totalStars\": 0,\r\n  \"message\": \"pruebas\",\r\n  \"page\": 0,\r\n  \"size\": 0,\r\n  \"totalElements\": 0,\r\n  \"totalPages\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/promotions/changestate/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"promotions",
+						"changestate",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "promotions/findallpromotionspage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/promotions/findallpromotionspage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"promotions",
+						"findallpromotionspage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "promotions/findallpromotions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/promotions/findallpromotions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"promotions",
+						"findallpromotions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "promotions/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/promotions/delete/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"promotions",
+						"delete",
+						"17"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

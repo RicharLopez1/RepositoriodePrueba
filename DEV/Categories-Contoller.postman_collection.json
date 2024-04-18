@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "584352ab-4694-4b10-b39f-94290d7aa960",
+		"name": "Categories-Contoller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20024251"
+	},
+	"item": [
+		{
+			"name": "categories/list/select",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/categories/list/select",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"categories",
+						"list",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 99,\r\n  \"name\": \"Jose Martwin\",\r\n  \"flgState\": true,\r\n  \"rubroId\": 1,\r\n  \"rubro\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\",\r\n    \"urlImagen\": \"string\",\r\n    \"categories\": [\r\n      \"string\"\r\n    ]\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/categories/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"categories",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Juan Roman\",\r\n  \"rubroId\": 1,\r\n  \"flg_state\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/categories/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"categories",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories/list/{store}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/categories/list/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"categories",
+						"list",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories/list-find-store/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/categories/list-find-store/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"categories",
+						"list-find-store",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories/store/{id}/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/categories/store/96/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"categories",
+						"store",
+						"96",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categories/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/categories/delete/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"categories",
+						"delete",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

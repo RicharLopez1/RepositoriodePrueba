@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "c24cec67-ec78-4300-998a-f4cb675b8d64",
+		"name": "Products-promotions-controller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20024251"
+	},
+	"item": [
+		{
+			"name": "productspromotions/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idPromotion\": 74,\r\n  \"idStore\": 19,\r\n  \"idProduct\": 237,\r\n  \"minimumPurchaseAmount\": 5,\r\n  \"maximumPurchaseAmount\": 10,\r\n  \"validity\": \"fecha\",\r\n  \"planIds\": [\r\n    4\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productspromotions/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 163,\r\n  \"idPromotion\": 79,\r\n  \"validity\": \"2024-04-16 15:56:20\",\r\n  \"planIds\": [\r\n    5\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productspromotions/find/name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/find/name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"find",
+						"name"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productspromotions/findall",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/findall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"findall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productspromotions/getppbyidstore/{idstore}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/getppbyidstore/86",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"getppbyidstore",
+						"86"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productspromotions/validate-promotion/{productPromotionId}/{userId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/validate-promotion/10/42",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"validate-promotion",
+						"10",
+						"42"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productspromotions/delete/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8777/productspromotions/delete/27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8777",
+					"path": [
+						"productspromotions",
+						"delete",
+						"27"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
